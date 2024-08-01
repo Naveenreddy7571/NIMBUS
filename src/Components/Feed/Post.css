@@ -1,0 +1,222 @@
+.post_head img {
+    margin: 20px 10px;
+    border-radius: 50%;
+    height: 40px;
+}
+.post-options {
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 35px;
+}
+
+.post-options button {
+    border: none;
+    background-color: white;
+}
+
+.feed {
+    flex: 0.5;
+    height: calc(100vh - 40px);
+    border-right: 1px solid var(--backgroundcolor);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.feed_header input[type="text"] {
+    padding: 10px 80px;
+    flex: 1;
+    border-radius: 20px;
+    border: 2px solid var(--color);
+    text-align: center;
+}
+
+.feed .feed_header button {
+    border-radius: 20px;
+    padding: 8px;
+    background-color: var(--color);
+    color: white;
+}
+
+.feed .feed_header button .material-icons {
+    font-size: 20px;
+}
+
+.feed ::-webkit-scrollbar {
+    display: none;
+}
+
+.feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.post_head {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.post_header {
+    flex-grow: 1;
+}
+
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--backgroundcolor);
+    padding-bottom: 10px;
+}
+
+.post_body {
+    position: relative;
+    max-width: 100%;
+    margin-left: 30px;
+}
+
+.post_body img {
+    width: 500px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.post_footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post_footer button {
+    border: none;
+    background-color: white;
+}
+
+.post_footer button .material-icons {
+    font-size: 30px;
+}
+
+.post_footer .likecomment .material-icons {
+    font-size: 28px;
+}
+.likecomment button {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+}
+
+.likecomment button .material-icons {
+    font-size: 16px;
+}
+
+
+#comment-btn {
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.post_header {
+    display: flex;
+    width: 100%;
+}
+
+.post_headertext h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.post_headertext {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.post_body_text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.post_body {
+    flex: 1;
+    padding: 10px;
+}
+
+.likecomment
+{
+    display: flex;
+    justify-content: space-around;
+}
+.like-button
+{
+    display: flex;
+    align-items: center;
+}
+/* Like button css */
+
+.like-button .heart-bg
+{
+    background-color: rgba(255,192,200,0);
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.like-button .heart-bg:hover
+{
+    background-color: rgba(255, 186, 218, 0.9);
+}
+
+.liked
+{
+    animation: like-anmi 1.3s steps(28) forwards;
+}
+
+@keyframes like-anmi {
+    to
+    {
+        background-position: right;
+    }
+}
+.like-button .heart-icon
+{
+    height: 100px;
+    width: 100px;
+    background: url("../../images/heart.png");
+    background-position: left;
+    cursor: pointer;
+    position:absolute;
+    justify-content: center;
+    transition: all 100ms;
+}
+
+.like-button
+{
+    display: flex;
+    align-items: center;
+}
+.like-button .likes-amount
+{
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    color: #888;
+    font-weight: 900;
+    margin-left: 1px;
+}

@@ -1,0 +1,57 @@
+
+.sidebar {
+    border-right: 1px solid var(--backgroundcolor);
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 10px;
+    gap: 1px;
+    float: left;
+}
+
+/* Sidebar Option */
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-color 150ms ease-out, color 150ms ease-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar Option Hover */
+.sidebar-option:hover,
+.sidebar-option.active {
+    background-color: var(--backgroundcolor);
+    color: #8C52FF;
+}
+
+/* Icon in Sidebar Option */
+.sidebar-option .material-icons {
+    padding: 20px;
+}
+
+/* Text in Sidebar Option */
+.sidebar-option h2 {
+    font-weight: 800;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+/* Navigation Button */
+#nav-bar-button {
+    border: none;
+    background-color: var(--backgroundcolor);
+    cursor: pointer;
+}
+
+/* Active State */
+.active {
+    color: #8C52FF;
+}

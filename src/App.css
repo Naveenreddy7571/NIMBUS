@@ -1,0 +1,20 @@
+.down-content {
+  display: grid;
+  gap: 10px;
+}
+
+.feed-activated {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+}
+
+.feed-deactivated {
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+}
+
+.activate-blur {
+  filter: blur(3px);
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.feed_header {
+  flex: 0.7;
+  margin: 0 20px;
+  position: relative;
+}
+
+.feed_header .search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.feed_header input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.feed_header button {
+  background-color: #8c52ff;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header_items button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header_items button img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.header_items button .material-icons {
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-drop-down-menu {
+  position: absolute;
+  right: 1%;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.profile-drop-down-menu.open-menu {
+  max-height: 500px;
+}
+
+.profile-menu {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  margin-left: 20px;
+  font-size: bolder;
+}
+
+.user-info img {
+  text-align: center;
+  border-radius: 50%;
+  height: 60px;
+}
+
+.profile-menu hr {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.sub-menu-link h3 {
+  margin-left: 15px;
+}
+
+.sub-menu-link:hover {
+  background-color: rgb(176, 174, 174);
+  border-radius: 15px;
+  transition: color 150ms ease-out;
+}
+
+.recent-searches {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.dropdown-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dropdown-divider {
+  margin: 8px 0;
+}

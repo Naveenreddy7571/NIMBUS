@@ -1,0 +1,121 @@
+.right_sidebar {
+
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.similar-skills {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid var(--backgroundcolor);
+    padding: 10px;
+}
+
+.person img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px 0; */
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.details {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.person button {
+    background-color:  #8C52FF;
+    color: white;
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.Question-of-the-day {
+
+    margin: 10px;
+}
+
+.question-of-the-day-post_body img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.question-of-the-day-post {
+    border: 2px solid var(--backgroundcolor);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.question-of-the-day-post_avatar {
+    display: flex;
+    margin-left: 10px;
+}
+
+.question-of-the-day-post_headertext {
+    margin-left: 20px;
+}
+
+.question-of-the-day-post_avatar img {
+
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.question-of-the-day-post_header {
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.Question-of-the-day h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-of-the-day-post_headertext h3,
+.question-of-the-day-post_headertext h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.question-of-the-day-post_body_text p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.question-of-the-day-post_footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-of-the-day-post_body button {
+    border: none;
+    background-color: white;
+}
+
+.likecomment button {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+}
+
+.likecomment button .material-icons {
+    font-size: 16px;
+}

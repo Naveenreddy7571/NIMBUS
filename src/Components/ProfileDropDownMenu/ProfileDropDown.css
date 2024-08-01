@@ -1,0 +1,72 @@
+/* profile dropw menu css */
+.profile-drop-down-menu
+{
+    position: absolute;
+    
+    right: 1%;
+    width: 320px;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.profile-drop-down-menu.open-menu {
+    max-height: 400px; 
+}
+
+.profile-menu
+{
+    background-color: var(--backgroundcolor);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.user-info
+{
+    display: flex;
+    align-items: center;
+
+
+}
+.user-info h3
+{
+    margin-left: 20px;
+    font-size:bolder;
+}
+.user-info img
+{
+    text-align: center;
+    border-radius: 50%;
+    height: 60px;
+}
+
+.profile-menu hr
+{
+    width: 100%;
+    height: 1px;
+    background: var(--backgroundcolor);
+    margin: 15px 0 10px;
+
+}
+
+.sub-menu-link
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 15px 0;
+    padding: 8px;
+}
+.sub-menu-link h3{
+    margin-left: 15px;
+}
+
+.sub-menu-link:hover
+{
+    background-color: rgb(176, 174, 174);
+    border-radius: 30px;
+    transition: color 150ms ease-out;
+}

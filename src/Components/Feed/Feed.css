@@ -1,0 +1,43 @@
+.feed {
+  flex: 0.5;
+  height: calc(100vh - 40px);
+  border-right: 1px solid var(--backgroundcolor);
+  min-width: fit-content;
+  overflow-y: scroll;
+  /* margin-top: 150px; */
+}
+
+.feed_header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.feed_header input[type="text"] {
+  padding: 10px 80px;
+  flex: 1;
+  border-radius: 20px;
+  border: 2px solid var(--color);
+  text-align: center;
+}
+
+.feed .feed_header button {
+  border-radius: 20px;
+  padding: 8px;
+  background-color: var(--color);
+  color: white;
+}
+
+.feed .feed_header button .material-icons {
+  font-size: 20px;
+}
+
+.feed ::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
